@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import TextInputGroup from '../layout/TextInputGroup';
-import uuid from 'uuid'
 
 import { connect } from 'react-redux'
 import { addContact } from '../../actions/contactActions'
@@ -35,7 +34,6 @@ class AddContact extends Component {
     }
 
     const newContact = {
-      id: uuid(),
       name,
       email,
       phone
